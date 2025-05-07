@@ -20,7 +20,7 @@ const Projects: NextPage = () => {
       date: "January, 2025",
       description: "A complete company website built as a Full Stack Developer Intern using React.js, HTML, CSS, and TypeScript. Features a fully responsive UI with smooth animations and all the key elements of a marketing website for a cohesive and engaging user experience.",
       imageUrl: "/demand-xpress-cover.jpg",
-      link: "https://demand-xpress.com"
+      link: "https://demandxpress.com"
     },
     {
       id: 2,
