@@ -40,13 +40,19 @@ const Projects: NextPage = () => {
     }
   ];
 
+  // Sort projects by date (most recent first)
+  const sortedProjects = [...projects].sort((a, b) => {
+    const parseDate = (str: string) => new Date(str.replace(/,/g, ''));
+    return parseDate(b.date).getTime() - parseDate(a.date).getTime();
+  });
+
   return (
     <Layout>
       <div className="content-container">
         <h1 className="page-title">PROJECTS</h1>
         <p className="subtitle">CRAFTED WITH CODE, CURIOSITY, AND COFFEE</p>
         
-        {projects.map(project => (
+        {sortedProjects.map(project => (
           <div className="project" key={project.id}>
             <h2 className="project-title">{project.title}</h2>
             <p className="project-date">{project.date}</p>
