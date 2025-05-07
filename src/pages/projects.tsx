@@ -1,5 +1,7 @@
 import Layout from '../components/Layout';
 import { NextPage } from 'next';
+import Image from 'next/image';
+
 
 interface Project {
   id: number;
@@ -49,7 +51,15 @@ const Projects: NextPage = () => {
             <h2 className="project-title">{project.title}</h2>
             <p className="project-date">{project.date}</p>
             <div className="project-image-container">
-              <img src={project.imageUrl} alt={project.title} className="project-image" />
+            <Image
+  src={project.imageUrl}
+  alt={project.title}
+  width={500}
+  height={300}
+  className="project-image"
+  layout="responsive"
+/>
+
             </div>
             <p className="project-description">{project.description}</p>
             {project.link && (

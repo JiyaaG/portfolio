@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface SocialLink {
   id: number;
@@ -44,7 +45,13 @@ const Sidebar: React.FC = () => {
   return (
     <div className="sidebar">
       <div className="profile-image">
-        <img src="/profile.jpg" alt="Jiya Gidwani" className="avatar" />
+        <Image
+          src="/profile.jpg"
+          alt="Jiya Gidwani"
+          width={150} // You can adjust this value
+          height={150} // You can adjust this value
+          className="avatar"
+        />
       </div>
       
       <h1 className="name">JIYA GIDWANI</h1>
@@ -79,4 +86,4 @@ const Sidebar: React.FC = () => {
   );
 };
 
-export default Sidebar; 
+export default Sidebar;
