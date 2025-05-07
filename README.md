@@ -34,7 +34,7 @@ Also — coffee, music, nature, and new places keep me going ☕🎵🌿✈️
 
 ## 🌍 Live Site
 
-[Visit My Portfolio](https://your-portfolio-url.vercel.app)
+[Visit My Portfolio](https://jiyaa.vercel.app/)
 
 ---
 
