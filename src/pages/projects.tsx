@@ -16,7 +16,7 @@ const Projects: NextPage = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Demand-Xpress",
+      title: "Demand Xpress",
       date: "January, 2025",
       description: "A complete company website built as a Full Stack Developer Intern using React.js, HTML, CSS, and TypeScript. Features a fully responsive UI with smooth animations and all the key elements of a marketing website for a cohesive and engaging user experience.",
       imageUrl: "/demand-xpress-cover.jpg",

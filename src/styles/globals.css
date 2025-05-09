@@ -133,7 +133,8 @@ body {
   width: 270px;
   min-width: 220px;
   max-width: 320px;
-  padding: 2.5rem 1.5rem 2.5rem 2.5rem;
+  padding: 2rem 1.5rem 2.5rem 2.5rem;
+  margin-top: 2rem;
   background: var(--color-sidebar);
   box-shadow: 2px 0 16px rgba(214, 204, 194, 0.04);
   display: flex;
@@ -238,7 +239,7 @@ body {
 
 .content {
   flex: 1;
-  padding: 2.5rem 2.5rem 2.5rem 0;
+  padding: 2rem 2.5rem 2.5rem 0;
   background: var(--color-bg);
   animation: fadeIn 1.2s cubic-bezier(.4,0,.2,1);
 }
@@ -246,6 +247,7 @@ body {
 .content-container {
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 0 !important;
   background: var(--color-card);
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(214, 204, 194, 0.04);

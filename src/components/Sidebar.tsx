@@ -16,12 +16,7 @@ const Sidebar: React.FC = () => {
       url: "https://github.com", 
       icon: "fab fa-github" 
     },
-    { 
-      id: 2, 
-      platform: "Instagram", 
-      url: "https://instagram.com/_.jiyaa15", 
-      icon: "fab fa-instagram" 
-    },
+    
     { 
       id: 3, 
       platform: "LinkedIn", 
@@ -61,7 +56,7 @@ const Sidebar: React.FC = () => {
       <div className="about-short">
         <h2>ABOUT</h2>
         <p>
-          Hi, I&#39;m Jiya. I&#39;m Full Stack Developer Intern currently based in Bangalore and working at Demand-Xpress, Hyderabad, India.
+          Hi, I&#39;m Jiya. I&#39;m Full Stack Developer Intern currently based in Bangalore and working at Demand Xpress, Hyderabad, India.
         </p>
         <Link href="/about">
           <button className="learn-more">LEARN MORE</button>

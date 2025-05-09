@@ -18,19 +18,23 @@ const Resume: NextPage = () => {
   };
 
   const skills = [
+    // Front-end
     { name: 'HTML/CSS', score: 5 },
     { name: 'ReactJS', score: 5 },
-    { name: 'NodeJS', score: 5 },
     { name: 'NextJS', score: 5 },
-    { name: 'MongoDB', score: 4 },
-    { name: 'Version Control (Git)', score: 4 },
     { name: 'Typescript', score: 4 },
     { name: 'Responsive Web Design', score: 4 },
     { name: 'Redux', score: 3 },
-    { name: 'NestJS', score: 3 },
     { name: 'Figma', score: 3 },
+    // Backend
+    { name: 'NodeJS', score: 5 },
+    { name: 'NestJS', score: 3 },
     { name: 'OOPs', score: 3 },
     { name: 'Java', score: 3 },
+    // Database
+    { name: 'MongoDB', score: 4 },
+    // Tools
+    { name: 'Version Control (Git)', score: 4 },
   ];
 
   return (
@@ -64,7 +68,7 @@ const Resume: NextPage = () => {
             <h2 className="section-title">EXPERIENCE</h2>
             <div className="experience-item">
               <h3>FullStack Developer Intern</h3>
-              <p>Demand-Xpress, Hyderabad, India</p>
+              <p>Demand Xpress, Hyderabad, India</p>
               <p>2025 - PRESENT</p>
               
               <ul>
