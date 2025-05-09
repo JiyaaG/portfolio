@@ -39,33 +39,32 @@ const Resume: NextPage = () => {
 
   return (
     <Layout>
-      <div className="content-container" style={{ position: 'relative' }}>
-        <a
-          href="https://drive.google.com/file/d/1up9fL7zAU7iqXuQUlhG9iVyRn90XXUgZ/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Download Resume (PDF)"
-          style={{
-            position: 'absolute',
-            top: 18,
-            right: 18,
-            zIndex: 10,
-            color: '#888',
-            fontSize: 22,
-            background: 'rgba(255,255,255,0.7)',
-            borderRadius: '50%',
-            padding: 6,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-            transition: 'background 0.2s, color 0.2s',
-            textDecoration: 'none',
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <i className="fas fa-download" aria-hidden="true"></i>
-        </a>
-        <h1 className="page-title">RESUME</h1>
+      <div className="content-container">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: '1.2rem' }}>
+          <h1 className="page-title" style={{ margin: 0 }}>RESUME</h1>
+          <a
+            href="https://drive.google.com/file/d/1up9fL7zAU7iqXuQUlhG9iVyRn90XXUgZ/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Download Resume (PDF)"
+            style={{
+              color: '#888',
+              fontSize: 22,
+              background: 'rgba(255,255,255,0.7)',
+              borderRadius: '50%',
+              padding: 6,
+              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              transition: 'background 0.2s, color 0.2s',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginLeft: 12,
+            }}
+          >
+            <i className="fas fa-download" aria-hidden="true"></i>
+          </a>
+        </div>
         
         <div className="resume-nav">
           <button 
