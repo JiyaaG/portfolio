@@ -1,7 +1,4 @@
-import Layout from '../components/Layout';
-import { NextPage } from 'next';
 import Image from 'next/image';
-
 
 interface Project {
   id: number;
@@ -12,7 +9,7 @@ interface Project {
   link?: string;
 }
 
-const Projects: NextPage = () => {
+export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
@@ -47,39 +44,33 @@ const Projects: NextPage = () => {
   });
 
   return (
-    <Layout>
-      <div className="content-container">
-        <h1 className="page-title">PROJECTS</h1>
-        <p className="subtitle">CRAFTED WITH CODE, CURIOSITY, AND COFFEE</p>
-        
-        {sortedProjects.map(project => (
-          <div className="project" key={project.id}>
-            <h2 className="project-title">{project.title}</h2>
-            <p className="project-date">{project.date}</p>
-            <div className="project-image-container">
+    <div className="content-container">
+      <h1 className="page-title">PROJECTS</h1>
+      <p className="subtitle">CRAFTED WITH CODE, CURIOSITY, AND COFFEE</p>
+      
+      {sortedProjects.map(project => (
+        <div className="project" key={project.id}>
+          <h2 className="project-title">{project.title}</h2>
+          <p className="project-date">{project.date}</p>
+          <div className="project-image-container">
             <Image
-  src={project.imageUrl}
-  alt={project.title}
-  width={500}
-  height={300}
-  className="project-image"
-  layout="responsive"
-/>
-
-            </div>
-            <p className="project-description">{project.description}</p>
-            {project.link && (
-              <p className="project-link">
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  {project.link}
-                </a>
-              </p>
-            )}
+              src={project.imageUrl}
+              alt={project.title}
+              width={500}
+              height={300}
+              className="project-image"
+            />
           </div>
-        ))}
-      </div>
-    </Layout>
+          <p className="project-description">{project.description}</p>
+          {project.link && (
+            <p className="project-link">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                {project.link}
+              </a>
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
   );
-};
-
-export default Projects; 
+} 

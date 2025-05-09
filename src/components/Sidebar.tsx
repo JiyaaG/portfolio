@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,7 +10,7 @@ interface SocialLink {
   icon: string;
 }
 
-const Sidebar: React.FC = () => {
+export default function Sidebar() {
   const socialLinks: SocialLink[] = [
     { 
       id: 1, 
@@ -43,8 +45,8 @@ const Sidebar: React.FC = () => {
         <Image
           src="/profile.jpg"
           alt="Jiya Gidwani"
-          width={150} // You can adjust this value
-          height={150} // You can adjust this value
+          width={150}
+          height={150}
           className="avatar"
         />
       </div>
@@ -79,6 +81,4 @@ const Sidebar: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default Sidebar;
+}
