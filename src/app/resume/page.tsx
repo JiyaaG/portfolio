@@ -28,7 +28,7 @@ export default function Resume() {
     { name: 'Responsive Web Design', score: 4 },
     { name: 'Redux', score: 3 },
     { name: 'Figma', score: 3 },
-    { name: 'React Native', score: 4 },
+    { name: 'React Native', score: 3 },
     // Backend
     { name: 'NodeJS', score: 5 },
     { name: 'NestJS', score: 3 },

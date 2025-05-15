@@ -27,7 +27,7 @@ export default function DownloadResumeModal({ isOpen, onClose, onDownload }: Dow
   };
 
   const handleDownloadAnyway = () => {
-    window.open('https://drive.google.com/file/d/1up9fL7zAU7iqXuQUlhG9iVyRn90XXUgZ/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1b6hwHyne59MQRHXFUANVq2O_ZzKRyyLl/view?usp=drive_link', '_blank');
     onClose();
   };
 

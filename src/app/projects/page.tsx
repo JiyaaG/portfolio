@@ -13,6 +13,14 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
+      title: "AI-Interviewer",
+      date: "February, 2025",
+      description: "An AI-powered interview preparation tool that analyzes job descriptions and resumes to generate relevant interview questions. Built with modern web technologies and deployed on Netlify for public access.",
+      imageUrl: "/ai-interviewer-cover.jpg",
+      link: "https://jiya-ai-interviewer.netlify.app"
+    },
+    {
+      id: 2,
       title: "Demand Xpress",
       date: "January, 2025",
       description: "A complete company website built as a Full Stack Developer Intern using React.js, HTML, CSS, and TypeScript. Features a fully responsive UI with smooth animations and all the key elements of a marketing website for a cohesive and engaging user experience.",
@@ -20,7 +28,7 @@ export default function Projects() {
       link: "https://demandxpress.com"
     },
     {
-      id: 2,
+      id: 3,
       title: "SOULIFY",
       date: "March, 2025",
       description: "A responsive mental wellness web app where I built the frontend using React, Tailwind CSS, and Redux, featuring a calming UI with smooth animations and scroll-based transitions to enhance user engagement.",
@@ -28,7 +36,7 @@ export default function Projects() {
       link: "https://soulify-rouge.vercel.app"
     },
     {
-      id: 3,
+      id: 4,
       title: "POKEDEX",
       date: "April, 2025",
       description: "A modern Pokédex web app built with Next.js, allowing users to search and explore Pokémon with detailed stats, images, and a fully responsive design.",
