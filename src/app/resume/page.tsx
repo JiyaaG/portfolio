@@ -42,7 +42,7 @@ export default function Resume() {
 
   const handleDownload = async (name: string, email: string) => {
     // Open Google Drive link immediately
-    window.open('https://drive.google.com/file/d/1up9fL7zAU7iqXuQUlhG9iVyRn90XXUgZ/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1b6hwHyne59MQRHXFUANVq2O_ZzKRyyLl/view?usp=drive_link', '_blank');
     setIsModalOpen(false);
 
     // Make API call asynchronously
