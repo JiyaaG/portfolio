@@ -10,7 +10,7 @@ export default function Resume() {
   const skillsList = [
     'HTML/CSS', 'JavaScript', 'Typescript', 'ReactJS', 'NodeJS', 
     'NestJS', 'Figma', 'MongoDB', 'Responsive Web Design', 
-    'OOPs', 'Version Control (Git)', 'NextJS', 'Redux', 'Java'
+    'OOPs', 'Version Control (Git)', 'NextJS', 'Redux', 'Java', 'React Native'
   ];
 
   const skillPalette = {
@@ -28,6 +28,7 @@ export default function Resume() {
     { name: 'Responsive Web Design', score: 4 },
     { name: 'Redux', score: 3 },
     { name: 'Figma', score: 3 },
+    { name: 'React Native', score: 4 },
     // Backend
     { name: 'NodeJS', score: 5 },
     { name: 'NestJS', score: 3 },

@@ -55,15 +55,30 @@ export async function initializeGoogleSheets() {
     return sheetsClient;
   }
 
+  // Properly format the private key
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY
+    ? process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
+    : undefined;
+
+  if (!privateKey) {
+    throw new Error('GOOGLE_PRIVATE_KEY is not defined');
+  }
+
   const auth = new JWT({
     email: process.env.GOOGLE_CLIENT_EMAIL,
-    key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+    key: privateKey,
     scopes: SCOPES,
   });
 
-  sheetsClient = google.sheets({ version: 'v4', auth });
-  await ensureSheetExists(sheetsClient);
-  return sheetsClient;
+  try {
+    await auth.authorize();
+    sheetsClient = google.sheets({ version: 'v4', auth });
+    await ensureSheetExists(sheetsClient);
+    return sheetsClient;
+  } catch (error) {
+    console.error('Error initializing Google Sheets:', error);
+    throw error;
+  }
 }
 
 export async function getVisitorData(sheets: any, ip: string, userAgent: string) {
