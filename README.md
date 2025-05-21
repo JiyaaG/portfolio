@@ -34,7 +34,7 @@ Also — coffee, music, nature, and new places keep me going ☕🎵🌿✈️
 
 ## 🌍 Live Site
 
-[Visit My Portfolio](https://jiyaa.vercel.app/)
+[Visit My Portfolio](jiyagidwani.com)
 
 ---
 
@@ -42,7 +42,7 @@ Also — coffee, music, nature, and new places keep me going ☕🎵🌿✈️
 
 - Email: jiyaagidwani@gmail.com  
 - LinkedIn: [linkedin.com/in/jiya-gidwani](https://www.linkedin.com/in/jiya-gidwani-53031b248/)  
-- GitHub: [github.com/JiyaaG](https://github.com/JiyaaG)
+- GitHub: [github.com/JiyaaG](https://github.com/JiyaaG/portfolio.git)
 
 ---
 
