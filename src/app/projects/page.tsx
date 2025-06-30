@@ -42,7 +42,15 @@ export default function Projects() {
       description: "A modern Pokédex web app built with Next.js, allowing users to search and explore Pokémon with detailed stats, images, and a fully responsive design.",
       imageUrl: "/pokedex-cover.jpg",
       link: "https://pokedex-alpha-rust.vercel.app/"
-    }
+    },
+    {
+      id: 5,
+      title: "CHAT-APP",
+      date: "June, 2025",
+      description: "A simple real-time chat application built with Node.js and Socket.IO. It allows multiple users to join a shared chatroom, send messages, and see others' messages instantly.The server uses asynchronous socket connections to handle multiple clients concurrently with message broadcasting.",
+      imageUrl: "/chat-app-cover.png",
+      link: "https://chat-app-uvg6.onrender.com/"
+    },
   ];
 
   // Sort projects by date (most recent first)
