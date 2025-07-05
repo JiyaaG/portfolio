@@ -19,7 +19,7 @@ export default function Contact() {
   }, []);
 
   const socialLinks: SocialLink[] = [
-    { id: 1, platform: 'GitHub', url: 'https://github.com', icon: 'fab fa-github' },
+    { id: 1, platform: 'GitHub', url: 'https://github.com/JiyaaG', icon: 'fab fa-github' },
     { id: 2, platform: 'LinkedIn', url: 'https://linkedin.com/in/jiya-gidwani-53031b248/', icon: 'fab fa-linkedin' },
     { id: 3, platform: 'Phone', url: 'tel:8770779795', icon: 'fas fa-phone' },
     { id: 4, platform: 'Email', url: 'mailto:jiyaagidwani@gmail.com', icon: 'fas fa-envelope' },

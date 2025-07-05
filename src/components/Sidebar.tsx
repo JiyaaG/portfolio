@@ -15,7 +15,7 @@ export default function Sidebar() {
     { 
       id: 1, 
       platform: "GitHub", 
-      url: "https://github.com", 
+      url: "https://github.com/JiyaaG", 
       icon: "fab fa-github" 
     },
     
